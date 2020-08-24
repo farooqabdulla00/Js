@@ -1,0 +1,48 @@
+var farooq = {
+    name : 'hey this is farooq',
+    age :27,
+    isActive : true 
+}
+var shaik = {
+    name : 'hey this is shaik',
+    age :23,
+    isActive : true 
+}
+
+var abdulla = {
+    name : 'hey this is abdulla',
+    age :25,
+    isActive : false 
+}
+var sangara = {
+    name : 'hey this is sangara farooq',
+    age :44,
+    isActive : false 
+}
+
+let users = new Map()
+users.set('farooq',farooq)
+users.set('abdulla11',abdulla)
+users.set('shaik11',shaik)
+users.set('sangara11',sangara)
+console.log(users.get('farooq'))
+console.log(users.values())
+
+//this iterate over the keys (abdulla11 saik11 angara11)
+// for (const key of users.values()){
+//     console.log(key)
+// }
+
+// this iterate over entire values
+for (const key of users.values()){
+    console.log(`the name is ${key.name} and the age is ${key.age}`)
+}
+
+for (const [key,values] of users.entries()){
+    console.log(key, values.age)
+}
+users.forEach((key,value) => console.log(key,value))
+
+var arrofArr = [['one','1'],['two','2'],['three','3']]
+var newMap = new Map(arrofArr)
+console.log(newMap)
