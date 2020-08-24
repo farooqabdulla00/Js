@@ -1,0 +1,42 @@
+arrow fuuntions
+--------------
+// // const syaHello = (name) => {
+// //     return "hey there "+ name
+// //     return `Hey there ${name}`
+// // }
+
+// // console.log(syaHello('farooq'))
+
+
+// does the same thing as abouve .. sugar coat ....
+
+//const sayHello = (name) => `Hey Mr ${name}` // return this .. with out keyword 
+//console.log(sayHello('farooq'))
+
+const newTodos = [{
+    title:'buy bread',
+    isDone: false,
+},{
+    title : 'Go to Gym',
+    isDone : true,
+},{
+    title : 'Go to Gym2',
+    isDone : true,
+}]
+
+// const thingsDone = newTodos.filter((todo) => {
+//         return todo.isDone === true
+
+// Method 2 
+// the above code can be writte  like this .. 
+// const thingsDone = newTodos.filter((todo) => todo.isDone === true)
+// console.log(thingsDone)
+
+// // this line again logs only title values .. very imp 
+// thingsDone.forEach((todoo) => console.log(todoo.title))
+
+ // method 3 onliner ... 
+const thingsDone = newTodos.filter((todo) => todo.isDone === true).forEach((todoo) => console.log(todoo.title))
+
+
+
